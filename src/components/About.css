@@ -1,0 +1,235 @@
+#about-con {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-con-in {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+}
+
+.about-img {
+    position: relative;
+    display: flex;  
+    width: 40%;
+}
+
+.about-img img {
+    width: 60%;
+    z-index: 1;
+}
+
+.about-img-bg {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 15px;
+    left: 15px;
+    background-color: none;
+    border: 3px solid #27E8A7;
+    border-image: linear-gradient(to right, #27E8A7, #1d8aa5) 1;
+    border-radius: 5px;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text p:nth-child(1) {
+    font-size: 20px;
+    color: #878787;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text p:nth-child(2) {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #27E8A7;
+    background-image: linear-gradient(#27E8A7, #1d8aa5);
+    background-clip: text;
+    color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text p:nth-child(3) {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.about-text p:nth-child(4) {
+    font-size: 20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.about-text p:nth-child(5), p:nth-child(6) {
+    color: white;
+}
+
+.scroll-con {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    background-color: #2D2F42;
+}
+
+.scroll {
+    position: relative;
+    width: 2rem;
+    height: 4rem;
+    border: 2px solid #27E8A7;
+    border-radius: 100px;
+    opacity: 0;
+}
+
+.scroll-obj {
+    position: absolute;
+    animation: triangle 2s ease infinite;
+}
+
+@keyframes  triangle {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    90%, 100% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-con-in {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-img {
+        width: 50%;
+        justify-content: center;
+        right: 5%;
+    }
+
+    .about-img-bg {
+        top: 15px;
+        left: 25%;
+    }
+
+    .about-text {
+        width: 90%;
+        padding-top: 2rem;
+    }
+
+    .about-text p:nth-child(1) {
+        font-size: 16px;
+        color: #878787;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about-text p:nth-child(2) {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #27E8A7;
+        background-image: linear-gradient(#27E8A7, #1d8aa5);
+        background-clip: text;
+        color: transparent;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about-text p:nth-child(3) {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-text p:nth-child(4) {
+        font-size: 16px;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about-text p:nth-child(5), p:nth-child(6) {
+        font-size: 14px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about-con-in {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-img {
+        width: 70%;
+        justify-content: center;
+        right: 5%;
+    }
+
+    .about-img-bg {
+        top: 15px;
+        left: 25%;
+    }
+
+    .about-text {
+        width: 90%;
+        padding-top: 2rem;
+    }
+
+    .about-text p:nth-child(1) {
+        font-size: 16px;
+        color: #878787;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about-text p:nth-child(2) {
+        font-size: 24px;
+        font-weight: 700;
+        color: #27E8A7;
+        background-image: linear-gradient(#27E8A7, #1d8aa5);
+        background-clip: text;
+        color: transparent;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about-text p:nth-child(3) {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-text p:nth-child(4) {
+        font-size: 14px;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about-text p:nth-child(5), p:nth-child(6) {
+        font-size: 12px;
+        color: white;
+    }
+}

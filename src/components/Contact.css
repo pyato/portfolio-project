@@ -1,0 +1,14 @@
+#contact-head {
+    text-align: center;
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.contact-icon-con a {
+    padding: 1rem;
+}
+
+.contact-email p {
+    font-size: 20px;
+}

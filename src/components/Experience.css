@@ -1,0 +1,182 @@
+span {
+    font-size: 20px;
+    color: white;
+}
+
+.experience-border-right {
+    display: flex;
+    justify-content: end;
+}
+
+.experience-border-right div {
+    width: 50%;
+    border-bottom: 1px solid #27E8A7;
+    border-image: linear-gradient(to right, #27E8A7, #1d8aa5) 1;
+}
+
+.experience-border-left {
+    width: 50%;
+    border-bottom: 1px solid #27E8A7;
+    border-image: linear-gradient(to right, #27E8A7, #1d8aa5) 1;
+}
+
+#experience-head p {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #27E8A7;
+    padding-top: 4rem;
+}
+
+.graduate-project-con {
+    display: flex;
+    padding: 4rem 0 0 0;
+}
+
+.graduate-project-img {
+    width: 50%;
+}
+
+.graduate-project-text {
+    width: 50%;
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+.graduate-project-text p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+}
+
+.graduate-project-text p:nth-child(2) {
+    color: white;
+    height: 150px;
+    overflow: auto;
+}
+
+.graduate-project-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.graduate-project-btn button {
+    background-color: unset;
+    color: #27E8A7;
+    border: 2px solid #27E8A7;
+    /* border-image: linear-gradient(to right, #27E8A7, #1d8aa5) 1; */
+    border-radius: 100px;
+    padding: 10px;
+    margin-left: 1rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+
+.graduate-project-btn button:hover {
+    color: white;
+    background-color: #27E8A7;
+}
+
+.project-con {
+    margin: 7rem 0 7rem 0;
+}
+
+.project-con > div:nth-child(1) {
+    color: #878787;
+    margin-bottom: 3rem;
+}
+
+.project-con-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    color: white;
+
+}
+
+.awards-con {
+    margin: 7rem 0 7rem 0;
+}
+
+.awards-con > p {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 3rem;
+}
+
+.award-con {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.award-con div {
+    width: 50%;
+}
+
+.award-con div img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.award-img {
+    margin-right: 2rem;
+}
+
+.publications-con {
+    color: white;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.publications-con > p {
+    margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .graduate-project-con {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .graduate-project-img {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
+    .graduate-project-text {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .graduate-project-text p:nth-child(2) {
+        color: white;
+        height: unset;
+        overflow: auto;
+    }
+
+    .project-con-card {
+        display: grid;
+        grid-template-columns: 90%;
+        gap: 5rem;
+        color: white;
+        justify-content: center;
+    }
+
+    .award-con {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .award-con div {
+        width: 90%;
+    }
+
+    .awards-con > div:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .award-img {
+        margin-right: 0;
+    }
+}

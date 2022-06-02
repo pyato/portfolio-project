@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.wrapper-about {
+  background-color: #2D2F42;
+  height: 100vh;
+}
+
+.wrapper-skills {
+  width: auto;
+  height: auto;
+}
+
+.wrapper-experience {
+  background-color: #2D2F42;
+  height: 100%;
+}
+
+.wrapper-contact {
+  background-color: #2D2F42;
+  height: 100%;
+}

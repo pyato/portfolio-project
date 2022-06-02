@@ -1,0 +1,41 @@
+#skills-head p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #2D2F42;
+    background-image: linear-gradient(#27E8A7, #1d8aa5);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 3rem;
+}
+
+.skills-img-con img {
+    width: auto;
+    height: 4rem;
+}
+
+.skills-img-con div {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-img-con div:nth-child(3) {
+    justify-content: center;
+}
+
+@media screen and (max-width: 450px) {
+    .skills-img-con img {
+        width: auto;
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .skills-img-con img {
+        width: auto;
+        height: 2rem;
+    }
+}
