@@ -17,7 +17,7 @@ function Contact() {
                     <a href="https://github.com/pyato?tab=repositories"><FaGithub color="#ffff" size={30} /></a>
                 </div>
                 <div className="contact-email">
-                    <p>Email: perapat.yat@gmail.com</p>
+                    <p>Email: peeraphat.yato@gmail.com</p>
                 </div>
             </div>
         </div>

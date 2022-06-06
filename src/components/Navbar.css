@@ -11,7 +11,7 @@
     border-image: linear-gradient(to right, #27E8A7, #1d8aa5) 1;
 }
 
-.navbar-con {    
+.navbar-con {
     max-width: 1700px;
     margin: 0 auto;
     display: flex;
@@ -54,7 +54,7 @@
     .navbar-menu {
         position: absolute;
         display: inline;
-        top: 0;        
+        top: 0;
         width: 100%;
         height: 100%;
         margin: 0;
