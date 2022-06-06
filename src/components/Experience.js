@@ -45,7 +45,7 @@ function Experience() {
                 <div>
                     <p>
                         <BsTriangle style={{ transform: "rotate(90deg)" }} color={"#27E8A7"} />
-                        <span> My project</span>
+                        <span> My projects</span>
                         <p>these project I built to improve my skills</p>
                     </p>
                 </div>
