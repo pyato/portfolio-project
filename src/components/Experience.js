@@ -66,7 +66,7 @@ function Experience() {
                     <div>
                         <Card nameWork="Weather" workImage={work4} gitUrl="https://github.com/pyato/weather-project"/>
                         <div>
-                            <ExplainProject explain="This project is a weather dashbord that reports current weather and daily forecast for 7 days with information provided from the openweathermap API. and this project developed with react." />
+                            <ExplainProject explain="This project is a weather dashboard that reports current weather and daily forecast for 7 days with information provided from the openweathermap API. and this project developed with react." />
                         </div>
                     </div>
                     <div>
