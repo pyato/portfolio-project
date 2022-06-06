@@ -12,7 +12,7 @@ function Card({nameWork, workImage, gitUrl}) {
                 {nameWork === "KaleCare" ? <div className="card-img-bg"></div> : <></>}
                 <div className="card-img-front">
                     <p>{nameWork}</p>
-                    {nameWork === "KaleCare" ? <></> : <a href={gitUrl}><FaGithub size={25} color="#27E8A7" /> </a>}
+                    {nameWork === "KaleCare" ? <></> : <a href={gitUrl} target="_blank"><FaGithub size={25} color="#27E8A7" /> </a>}
                 </div>              
             </div>
         </div>
