@@ -1,5 +1,5 @@
 import "../App.css";
-import "./Contact.css";
+import "../assets/css/Contact.css";
 import React from "react";
 import { FaFacebookSquare } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';

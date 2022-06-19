@@ -1,3 +1,7 @@
+.navbar-logo a {
+    font-weight: 600;
+}
+
 .navbar-logo a:hover {
     color: #27E8A7;
     background-image: linear-gradient(#27E8A7, #1d8aa5);
@@ -56,9 +60,10 @@
         display: inline;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: auto;
         margin: 0;
         padding: 0;
+        padding-bottom: 2rem;
         background-color: #232639;
         z-index: 2;
         text-align: center;

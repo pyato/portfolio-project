@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "../assets/css/Navbar.css";
 import React, { useEffect, useState } from "react";
 import { FaStream } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';

@@ -1,7 +1,7 @@
 import "../App.css";
-import "./About.css";
+import "../assets/css/About.css";
 import React from "react";
-import profile from "../images/profile.jpg";
+import profile from "../assets/images/profile.jpg";
 import { BsTriangle } from 'react-icons/bs';
 
 function About() {

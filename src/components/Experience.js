@@ -1,21 +1,21 @@
 import "../App.css";
-import "./Experience.css";
-import React, { useState } from "react";
-import work1 from "../images/work/work1.PNG";
-import work2 from "../images/work/work2.PNG";
-import work3 from "../images/work/work3.PNG";
-import work4 from "../images/work/work4.PNG";
-import work5 from "../images/work/work5.PNG";
-import award1 from "../images/awards/award1.PNG";
-import award2 from "../images/awards/award2.jpg";
+import "../assets/css/Experience.css";
+import React, { useContext, useState } from "react";
+import work1 from "../assets/images/work/work1.PNG";
+import work2 from "../assets/images/work/work2.PNG";
+import work3 from "../assets/images/work/work3.PNG";
+import work4 from "../assets/images/work/work4.PNG";
+import work5 from "../assets/images/work/work5.PNG";
+import award1 from "../assets/images/awards/award1.PNG";
+import award2 from "../assets/images/awards/award2.jpg";
 import ExplainProject from "./ExplainProject";
 import ExplainGraduate from "./ExplainGraduate";
 import { BsTriangle } from 'react-icons/bs';
-
 import Card from "./Card";
+import { ExperienceContext } from '../contexts/experienceContext';
 
 function Experience() {
-    const [viewMore, setViewMore] = useState(false);
+    const expContext = useContext(ExperienceContext);
 
     return (
         <div className="container">
@@ -33,13 +33,11 @@ function Experience() {
                     </p>
                     <p>This project is an automatic kale plot management system. It used weather forecast data to calculate appropriate quantity of water. A server application is developed with an express framework. It is used to communicate a web application, controlling box and mongoDB. A web application is developed with react library.</p>
                     <div className="graduate-project-btn">
-                        <button onClick={() => setViewMore(!viewMore)}>View More</button>
+                        <button onClick={() => expContext.setViewMore(!expContext.viewMore)}><a href="#graduate-con">View More</a></button>
                     </div>
                 </div>
             </div>
-            <div>
-                {viewMore ? <ExplainGraduate /> : <></> }
-            </div>
+            {expContext.viewMore ? <ExplainGraduate /> : <></> }
             <div className="experience-border-right"><div></div></div>
             <div className="project-con">
                 <div>

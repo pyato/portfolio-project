@@ -1,5 +1,5 @@
 import "../App.css";
-import "./ExplainProject.css";
+import "../assets/css/ExplainProject.css";
 import React from "react";
 
 function ExplainProject({explain}) {

@@ -1,0 +1,159 @@
+#graduate-con {
+    position: absolute;
+    padding: 0 40px 40px 40px;
+    width: 100%;
+    height: auto;
+    top: 9rem;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 7;
+}
+
+.graduate-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.graduate-header p {
+    color: #2D2F42;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.graduate-list label {
+    padding: 0 15px 15px 15px;
+    font-weight: 600;
+    color: #DEDEDE;
+    cursor: pointer;
+}
+
+#overview:checked ~ .graduate-list label[for="overview"] {
+    color: #2D2F42;
+    border-bottom: 2px solid #27E8A7;
+}
+#hardware:checked ~ .graduate-list label[for="hardware"] {
+    color: #2D2F42;
+    border-bottom: 2px solid #27E8A7;
+}
+#software:checked ~ .graduate-list label[for="software"] {
+    color: #2D2F42;
+    border-bottom: 2px solid #27E8A7;
+}
+
+.overview-con {
+    margin-top: 4rem;
+}
+
+.overview-img {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.overview-img img {
+    width: 90%;
+}
+
+.hardware-con {
+    margin-top: 4rem;
+}
+
+.hardware-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.hardware-img img {
+    width: 45%;
+}
+
+.software-con {
+    margin-top: 3rem;
+}
+
+.software-admin {
+    margin-top: 20px;
+}
+
+.software-user, .software-admin {
+    display: flex;
+}
+
+.software-user img, .software-admin img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.software-user-text, .software-admin-text {
+    padding: 0px 0px 0px 10px;
+}
+
+.software-user-text :not(p:nth-child(1)), .software-admin-text :not(p:nth-child(1)) {
+    font-size: 11px;
+}
+
+.software-user-text p:nth-child(1), .software-admin-text p:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.library-img img {
+    width: 90%;
+}
+
+.library-img {
+    display: flex;
+    margin-top: 10px;
+}
+
+.library-img p {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 880px) {
+    .software-user, .software-admin {
+        display: block;
+        text-align: center;
+    }
+
+    .software-user-text, .software-admin-text {
+        text-align: start;
+    }
+
+    .software-user img, .software-admin img {
+        width: 80%;
+        object-fit: cover;
+    }
+
+    .library-img {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #graduate-con {
+        padding: 0 10px 10px 10px;
+    }
+
+    .software-user img, .software-admin img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .graduate-list label {
+        font-size: 12px;
+        padding: 0 15px 15px 15px;
+        font-weight: 600;
+        color: #DEDEDE;
+        cursor: pointer;
+    }
+}

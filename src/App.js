@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -7,8 +7,10 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import { ExperienceContext } from './contexts/experienceContext';
 
 function App() {
+  const expContext = useContext(ExperienceContext);
 
   useEffect(() => {
     AOS.init({
@@ -19,7 +21,9 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <div className="wrapper-navbar">
+        <Navbar />
+      </div>
       <div className="wrapper-about">
         <About />
       </div>
@@ -30,6 +34,14 @@ function App() {
         <Experience />
         <Contact />
       </div>
+      {expContext.viewMore ?
+        <div
+          className="graduate-bg"
+          onClick={() => expContext.setViewMore(false)}
+        ></div>
+        :
+        <></>
+      }
     </div>
 
   );
