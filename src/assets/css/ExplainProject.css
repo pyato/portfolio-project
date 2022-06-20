@@ -1,3 +1,12 @@
 .explain-con {
     margin-top: 1rem;
 }
+
+.explain-link {
+    display: flex;
+    justify-content: end;
+}
+
+.explain-link a {
+    margin: 5px 5px 0px 5px;
+}

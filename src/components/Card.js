@@ -1,20 +1,20 @@
 import "../App.js";
 import "../assets/css/Card.css";
 import React from "react";
-import { FaGithub } from "react-icons/fa";
 
-function Card({nameWork, workImage, gitUrl}) {
+function Card({ nameWork, workImage, externalLink }) {
 
     return (
         <div className="container">
-            <div className="card-img">  
-                <img src={workImage}/>
-                {nameWork === "KaleCare" ? <div className="card-img-bg"></div> : <></>}
-                <div className="card-img-front">
-                    <p>{nameWork}</p>
-                    {nameWork === "KaleCare" ? <></> : <a href={gitUrl} target="_blank"><FaGithub size={25} color="#27E8A7" /> </a>}
-                </div>              
-            </div>
+            <a href={externalLink} target="_blank" >
+                <div className="card-img" >
+                    <img src={workImage} />
+                    {nameWork === "KaleCare" ? <div className="card-img-bg"></div> : <></>}
+                    <div className="card-img-front">
+                        <p>{nameWork}</p>
+                    </div>
+                </div>
+            </a>
         </div>
     )
 }

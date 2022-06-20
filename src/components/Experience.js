@@ -37,7 +37,7 @@ function Experience() {
                     </div>
                 </div>
             </div>
-            {expContext.viewMore ? <ExplainGraduate /> : <></> }
+            {expContext.viewMore ? <ExplainGraduate /> : <></>}
             <div className="experience-border-right"><div></div></div>
             <div className="project-con">
                 <div>
@@ -50,27 +50,43 @@ function Experience() {
 
                 <div className="project-con-card">
                     <div>
-                        <Card nameWork="CRUD" workImage={work2} gitUrl="https://github.com/pyato/crud-project"/>
+                        <Card nameWork="CRUD" workImage={work2} externalLink="https://crud-client-project.herokuapp.com/" />
                         <div>
-                            <ExplainProject explain="CRUD (create, read, update, delete) is a project that connects to the database to perform the above actions, server is developed with node js, client is developed with react and mongo db is database." />
+                            <ExplainProject
+                                explain="CRUD (create, read, update, delete) is a project that connects to the database to perform the above actions, server is developed with node js, client is developed with react and mongo db is database."
+                                gitUrl="https://github.com/pyato/crud-project"
+                                externalLink="https://crud-client-project.herokuapp.com/"
+                            />
                         </div>
                     </div>
                     <div>
-                        <Card nameWork="Recipe" workImage={work3} gitUrl="https://github.com/pyato/recipe-project"/>
+                        <Card nameWork="Recipe" workImage={work3} externalLink="https://web-recipe-project.herokuapp.com/" />
                         <div>
-                            <ExplainProject explain="This project is developed to improve skill for UI design and skill to develop responsive website with react." />
+                            <ExplainProject
+                                explain="This project is developed to improve skill for UI design and skill to develop responsive website with react."
+                                gitUrl="https://github.com/pyato/recipe-project"
+                                externalLink="https://web-recipe-project.herokuapp.com/"
+                            />
                         </div>
                     </div>
                     <div>
-                        <Card nameWork="Weather" workImage={work4} gitUrl="https://github.com/pyato/weather-project"/>
+                        <Card nameWork="Weather" workImage={work4} externalLink="http://weather-dashboard-project.herokuapp.com/" />
                         <div>
-                            <ExplainProject explain="This project is a weather dashboard that reports current weather and daily forecast for 7 days with information provided from the openweathermap API. and this project developed with react." />
+                            <ExplainProject
+                                explain="This project is a weather dashboard that reports current weather and daily forecast for 7 days with information provided from the openweathermap API. and this project developed with react."
+                                gitUrl="https://github.com/pyato/weather-project"
+                                externalLink="http://weather-dashboard-project.herokuapp.com/"
+                            />
                         </div>
                     </div>
                     <div>
-                        <Card nameWork="Portfolio" workImage={work5} gitUrl="https://github.com/pyato/portfolio-project"/>
+                        <Card nameWork="Portfolio" workImage={work5} externalLink="https://portfolio-peeraphat.herokuapp.com/" />
                         <div>
-                            <ExplainProject explain="My portfolio website describes me. And will collect the work I've done and this website is developed with react as well." />
+                            <ExplainProject
+                                explain="My portfolio website describes me. And will collect the work I've done and this website is developed with react as well."
+                                gitUrl="https://github.com/pyato/portfolio-project"
+                                externalLink="https://portfolio-peeraphat.herokuapp.com/"
+                            />
                         </div>
                     </div>
                 </div>
